@@ -18,7 +18,9 @@
   display: flex;
 }
 /*лого яндекса*/
-.logo {}
+.logo {
+  position: absolute;
+}
 .title {
   font-weight: 600;
   margin: 0;
@@ -34,7 +36,6 @@
 }
 /*расположение логотипа в хедере*/
 .logo_place_header {
-  position: absolute;
   top: 30px;
   left: 64px;
 }
@@ -146,7 +147,6 @@
   flex-direction: column;
   row-gap: 20px;
   width: 250px;
-  border: 3px solid red;
 }
 .cell__heading {
   margin: 0;
@@ -161,6 +161,46 @@
   font-weight: normal;
 }
 
+
+.feynman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  row-gap: 70px;
+  height: 890px;
+  background-color: #f2f2f2;
+}
+.feynman__title {
+  width: 648px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  z-index: 1;
+}
+/*пофиксить повторяющиеся стили*/
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 1;
+}
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.feynman__illustration {
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
