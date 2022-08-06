@@ -172,6 +172,7 @@
   background-color: #f2f2f2;
 }
 .feynman__title {
+  margin-top: 100px;
   width: 648px;
   text-align: center;
   line-height: 1.15;
